@@ -56,11 +56,11 @@ module.exports = {
         apiKey: ETHERSCAN_API_KEY,
     },
     gasReporter: {
-        enabled: false,
+        enabled: true,
         currency: "USD",
         outputFile: "gas-report.txt",
         noColors: true,
-        coinmarketcap: COINMARKETCAP_API_KEY,
+        // coinmarketcap: COINMARKETCAP_API_KEY,
     },
     namedAccounts: {
         deployer: {
@@ -70,10 +70,6 @@ module.exports = {
     },
 }
 
-
-
-
-
 // require("dotenv").config();
 
 // require("@nomiclabs/hardhat-etherscan");
@@ -81,8 +77,6 @@ module.exports = {
 // require("hardhat-gas-reporter");
 // require("solidity-coverage");
 // require("hardhat-deploy")
-
-
 
 // // You need to export an object to set up your config
 // Go to https://hardhat.org/config/ to learn more

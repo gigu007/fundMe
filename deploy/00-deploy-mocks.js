@@ -1,5 +1,5 @@
-const {network}=require("hardhat");
-const{DECIMALS,INITIAL_ANSWER}=require("../helper-hardhart-config")
+const { network } = require("hardhat")
+const { DECIMALS, INITIAL_ANSWER } = require("../helper-hardhart-config")
 
 module.exports = async ({ getNamedAccounts, deployments }) => {
     const { deploy, log } = deployments
@@ -38,7 +38,6 @@ module.exports.tags = ["all", "mocks"]
 //             from:deployer,
 //             log:true,
 //             args:[DECIMALS,INITIAL_ANSWER],
-            
 
 //         })
 //         log("Mocks deployed")
